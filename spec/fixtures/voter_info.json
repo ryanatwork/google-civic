@@ -243,21 +243,6 @@
   },
   {
    "type": "General",
-   "office": "U.S. Representative 3",
-   "district": {
-    "name": "U.S. Representative 3",
-    "scope": "congressional",
-    "id": "3"
-   },
-   "sources": [
-    {
-     "name": "Voting Information Project",
-     "official": true
-    }
-   ]
-  },
-  {
-   "type": "General",
    "office": "Governor/Lt. Governor",
    "district": {
     "name": "Governor/Lt. Governor",
@@ -287,6 +272,21 @@
      "email": "media@brownback.com"
     }
    ],
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "U.S. Representative 3",
+   "district": {
+    "name": "U.S. Representative 3",
+    "scope": "congressional",
+    "id": "3"
+   },
    "sources": [
     {
      "name": "Voting Information Project",
@@ -369,9 +369,25 @@
   },
   {
    "type": "General",
-   "office": "BD of Public Utilities (AL)",
+   "office": "USD 500",
    "district": {
-    "name": "BD of Public Utilities (AL)"
+    "name": "USD 500",
+    "id": "500"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Treasurer",
+   "district": {
+    "name": "Treasurer",
+    "scope": "countywide",
+    "id": "2"
    },
    "sources": [
     {
@@ -396,25 +412,9 @@
   },
   {
    "type": "General",
-   "office": "USD 500",
+   "office": "BD of Public Utilities (AL)",
    "district": {
-    "name": "USD 500",
-    "id": "500"
-   },
-   "sources": [
-    {
-     "name": "Voting Information Project",
-     "official": true
-    }
-   ]
-  },
-  {
-   "type": "General",
-   "office": "Treasurer",
-   "district": {
-    "name": "Treasurer",
-    "scope": "countywide",
-    "id": "2"
+    "name": "BD of Public Utilities (AL)"
    },
    "sources": [
     {

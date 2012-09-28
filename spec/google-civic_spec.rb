@@ -16,7 +16,7 @@ describe GoogleCivic do
 
   describe ".delegate" do
     it "should delegate missing methods to GoogleCivic::Client" do
-      stub_get("/elections?key=abc123").
+      stub_get("/elections?key").
         to_return(:status => 200, :body => fixture("elections.json"), :headers => {})
       elections = GoogleCivic.elections
       elections.first.should == ["kind", "civicinfo#electionsqueryresponse"]

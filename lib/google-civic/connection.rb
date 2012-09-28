@@ -5,9 +5,13 @@ module GoogleCivic
   module Connection
     private
 
-    def connection
-      connection = Faraday.new(:url => 'https://www.googleapis.com/civicinfo/us_v1/') do |builder|
-        builder.request :url_encoded
+    def connection(json, options={})
+      connection = Faraday.new(options.merge({:url => 'https://www.googleapis.com/civicinfo/us_v1/'})) do |builder|
+        if json
+          builder.request :json
+        else
+          builder.request :url_encoded
+        end
         builder.use FaradayMiddleware::Mashify
         builder.use FaradayMiddleware::ParseJson
         builder.adapter  Faraday.default_adapter
