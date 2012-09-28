@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'yard'
   gem.author      = "Ryan Resella"
   gem.description = %q{A Ruby wrapper for the Google Civic API}
-  gem.email       = 'ryanresella@gmail.com'
+  gem.email       = 'ryan@codeforamerica.org'
   gem.executables = `git ls-files -- bin/*`.split("\n").map{|f| File.basename(f)}
   gem.files       = `git ls-files`.split("\n")
   gem.homepage    = ''
