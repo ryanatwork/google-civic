@@ -2,6 +2,11 @@
 require File.expand_path('../lib/google-civic/version', __FILE__)
 
 Gem::Specification.new do |gem|
+  gem.add_dependency 'addressable', '~> 2.2'
+  gem.add_dependency 'faraday', '~> 0.8'
+  gem.add_dependency 'faraday_middleware', '~> 0.8'
+  gem.add_dependency 'hashie', '~> 1.2'
+  gem.add_dependency 'multi_json', '~> 1.3'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rdiscount'
   gem.add_development_dependency 'rspec'
