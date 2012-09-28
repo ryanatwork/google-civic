@@ -1,0 +1,3 @@
+module GoogleCivic
+  # Your code goes here...
+end
