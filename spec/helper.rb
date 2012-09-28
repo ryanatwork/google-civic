@@ -57,9 +57,5 @@ def fixture(file)
 end
 
 def google_url(url)
-  if url =~ /^http/
-    url
-  else
-    "https://www.googleapis.com/civicinfo/us_v1#{url}"
-  end
+  "https://www.googleapis.com/civicinfo/us_v1#{url}"
 end

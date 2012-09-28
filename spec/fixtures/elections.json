@@ -1,0 +1,15 @@
+{
+ "kind": "civicinfo#electionsqueryresponse",
+ "elections": [
+  {
+   "id": "2000",
+   "name": "VIP Test Election",
+   "electionDay": "2013-06-06"
+  },
+  {
+   "id": "4000",
+   "name": "U.S. 2012 General Election",
+   "electionDay": "2012-11-06"
+  }
+ ]
+}

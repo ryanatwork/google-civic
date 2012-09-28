@@ -1,8 +1,6 @@
-require 'google-civic/configuration'
 require 'google-civic/client'
 
 module GoogleCivic
-  extend Configuration
   class << self
     # Alias for GoogleCivic::Client.new
     #

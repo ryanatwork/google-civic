@@ -10,5 +10,17 @@ describe GoogleCivic::Client do
     }.should_not raise_exception
   end
 
+  before do
+    @client = GoogleCivic::Client.new(:key => "abc123")
+  end
+
+  describe "#elections" do
+    it "should list the elections in the API" do
+      stub_get("/elections?key=abc123").
+        to_return(:status => 200, :body => fixture("elections.json"), :headers => {})
+      elections = @client.elections
+      elections.first.should == ["kind", "civicinfo#electionsqueryresponse"]
+    end
+  end
 
 end

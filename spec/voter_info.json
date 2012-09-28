@@ -1,0 +1,484 @@
+{
+ "kind": "civicinfo#voterinforesponse",
+ "status": "success",
+ "election": {
+  "id": "2000",
+  "name": "VIP Test Election",
+  "electionDay": "2013-06-06"
+ },
+ "normalizedInput": {
+  "line1": "1263 Pacific Ave",
+  "city": "Kansas City",
+  "state": "KS",
+  "zip": "66102"
+ },
+ "pollingLocations": [
+  {
+   "address": {
+    "locationName": "National Guard Armory",
+    "line1": "100 S 20th St",
+    "line2": "",
+    "line3": "",
+    "city": "Kansas City",
+    "state": "KS",
+    "zip": "66102 "
+   },
+   "pollingHours": " - ",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  }
+ ],
+ "contests": [
+  {
+   "type": "General",
+   "office": "Attorney",
+   "district": {
+    "name": "Attorney",
+    "scope": "countywide",
+    "id": "4"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Sheriff",
+   "district": {
+    "name": "Sheriff",
+    "scope": "countywide",
+    "id": "5"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Kansas Representative 32",
+   "district": {
+    "name": "Kansas Representative 32",
+    "scope": "stateLower",
+    "id": "32"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Governor/Lt. Governor",
+   "district": {
+    "name": "Governor/Lt. Governor",
+    "scope": "statewide",
+    "id": "1"
+   },
+   "candidates": [
+    {
+     "name": "Andrew P.  Gray",
+     "party": "Libertarian",
+     "email": "chair@lpks.org"
+    },
+    {
+     "name": "Kenneth (ken) W. Cannon",
+     "party": "Reform"
+    },
+    {
+     "name": "Tom Holland",
+     "party": "Democratic",
+     "candidateUrl": "www.tomhollandforkansas.com",
+     "email": "info@tomhollandforkansas.com"
+    },
+    {
+     "name": "Sam Brownback",
+     "party": "Republican",
+     "candidateUrl": "www.brownbackforkansas.com",
+     "email": "media@brownback.com"
+    }
+   ],
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "KCKCC Member AL Brd of Trustee",
+   "district": {
+    "name": "KCKCC Member AL Brd of Trustee"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Secretary of State",
+   "district": {
+    "name": "Secretary of State",
+    "scope": "statewide",
+    "id": "2"
+   },
+   "candidates": [
+    {
+     "name": "Chris Biggs",
+     "party": "Democratic"
+    },
+    {
+     "name": "Kris Kobach",
+     "party": "Republican"
+    },
+    {
+     "name": "Phillip Horatio Lucas",
+     "party": "Libertarian"
+    },
+    {
+     "name": "Derek Langseth",
+     "party": "Reform"
+    }
+   ],
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "U.S. Senate",
+   "district": {
+    "name": "U.S. Senate",
+    "scope": "statewide",
+    "id": "5"
+   },
+   "candidates": [
+    {
+     "name": "Lisa Johnston",
+     "party": "Democratic",
+     "candidateUrl": "www.lisaforkansas.com",
+     "phone": "913-662-1457",
+     "email": "lisa@lisaforkansas.com"
+    },
+    {
+     "name": "Jerry Moran",
+     "party": "Republican"
+    },
+    {
+     "name": "Michael Wm. Dann",
+     "party": "Libertarian"
+    },
+    {
+     "name": "Joseph (joe) K. Bellis",
+     "party": "Reform"
+    }
+   ],
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "BD of Public Utilities 2",
+   "district": {
+    "name": "BD of Public Utilities 2",
+    "id": "2"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Attorney General",
+   "district": {
+    "name": "Attorney General",
+    "scope": "statewide",
+    "id": "3"
+   },
+   "candidates": [
+    {
+     "name": "Steve Six",
+     "party": "Democratic"
+    },
+    {
+     "name": "Derek Schmidt",
+     "party": "Republican"
+    },
+    {
+     "name": "Dennis Hawver",
+     "party": "Libertarian"
+    }
+   ],
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "U.S. Representative 3",
+   "district": {
+    "name": "U.S. Representative 3",
+    "scope": "congressional",
+    "id": "3"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Governor/Lt. Governor",
+   "district": {
+    "name": "Governor/Lt. Governor",
+    "scope": "statewide",
+    "id": "1"
+   },
+   "candidates": [
+    {
+     "name": "Andrew P.  Gray",
+     "party": "Libertarian",
+     "email": "chair@lpks.org"
+    },
+    {
+     "name": "Kenneth (ken) W. Cannon",
+     "party": "Reform"
+    },
+    {
+     "name": "Tom Holland",
+     "party": "Democratic",
+     "candidateUrl": "www.tomhollandforkansas.com",
+     "email": "info@tomhollandforkansas.com"
+    },
+    {
+     "name": "Sam Brownback",
+     "party": "Republican",
+     "candidateUrl": "www.brownbackforkansas.com",
+     "email": "media@brownback.com"
+    }
+   ],
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Commissioner-At-Large 2",
+   "district": {
+    "name": "Commissioner-At-Large 2",
+    "id": "2"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Kansas Senate 6",
+   "district": {
+    "name": "Kansas Senate 6",
+    "scope": "stateUpper",
+    "id": "6"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Clerk",
+   "district": {
+    "name": "Clerk",
+    "scope": "countywide",
+    "id": "1"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "President / Vice President",
+   "district": {
+    "name": "President / Vice President",
+    "id": "6"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Register of Deeds",
+   "district": {
+    "name": "Register of Deeds",
+    "scope": "countywide",
+    "id": "3"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "BD of Public Utilities (AL)",
+   "district": {
+    "name": "BD of Public Utilities (AL)"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Commissioner 2",
+   "district": {
+    "name": "Commissioner 2",
+    "id": "2"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "USD 500",
+   "district": {
+    "name": "USD 500",
+    "id": "500"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "Treasurer",
+   "district": {
+    "name": "Treasurer",
+    "scope": "countywide",
+    "id": "2"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "office": "State Board of Education 1",
+   "district": {
+    "name": "State Board of Education 1",
+    "id": "1"
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  }
+ ],
+ "state": [
+  {
+   "name": "State of Kansas",
+   "electionAdministrationBody": {
+    "name": "Kansas",
+    "electionOfficials": [
+     {
+      "name": "Brad Bryant",
+      "title": "Election Director",
+      "officePhoneNumber": "785-296-4561",
+      "emailAddress": "cclark@essvote.com"
+     }
+    ]
+   },
+   "local_jurisdiction": {
+    "name": "Wyandotte",
+    "electionAdministrationBody": {
+     "name": "Wyandotte",
+     "electionInfoUrl": "http://www.wycokck.org/election",
+     "electionOfficials": [
+      {
+       "name": "Bruce Newby",
+       "title": "Election Commissioner",
+       "officePhoneNumber": "(913) 573-8500",
+       "emailAddress": "hbbrooks@essvote.com"
+      }
+     ]
+    },
+    "sources": [
+     {
+      "name": "Voting Information Project",
+      "official": true
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  }
+ ]
+}
