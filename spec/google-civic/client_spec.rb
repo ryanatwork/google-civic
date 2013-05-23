@@ -26,9 +26,8 @@ describe GoogleCivic::Client do
   describe "#voter_info" do
     it "should return the voter information from an address" do
      stub_post("/voterinfo/2000/lookup?address=1263%20Pacific%20Ave.%20Kansas%20City%20KS&key=abc123").
-       with(:body => "{\"address\":\"1263 Pacific Ave. Kansas City KS\"}",
-              :headers => {'Accept'=>'*/*', 'Content-Type'=>'application/json', 'User-Agent'=>'Ruby'}).
-         to_return(:status => 200, :body => fixture("voter_info.json"), :headers => {})
+       with(:body => "{\"address\":\"1263 Pacific Ave. Kansas City KS\"}").
+        to_return(:status => 200, :body => fixture("voter_info.json"), :headers => {})
       voter_info = @client.voter_info(2000, "1263 Pacific Ave. Kansas City KS")
       voter_info.election.name.should == "VIP Test Election"
     end
