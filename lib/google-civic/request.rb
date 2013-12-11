@@ -2,22 +2,20 @@ require 'multi_json'
 
 module GoogleCivic
   module Request
-    def get(path, options={})
-      request(:get, path, json=false,options)
+    def get(path,options={})
+      request(:get, path, body=nil, options)
     end
 
-    def post(path, options={})
-      request(:post, path, json=true,options)
+    def post(path, body, options={})
+      request(:post, path, body, options)
     end
 
     private
 
-    def request(method, path, json,options)
-      response = connection(json).send(method) do |request|
+    def request(method, path, body, options)
+      response = connection.send(method) do |request|
         request.url(path,  options.merge(:key => @key))
-        if json
-          request.body = options.to_json
-        end
+        request.body = body.to_json
       end
       response.body
     end

@@ -25,17 +25,25 @@ describe GoogleCivic::Client do
 
   describe "#voter_info" do
     it "should return the voter information from an address" do
-     stub_post("/voterinfo/2000/lookup?address=1263%20Pacific%20Ave.%20Kansas%20City%20KS&key=abc123").
+      stub_post("/voterinfo/2000/lookup?key=abc123").
        with(:body => "{\"address\":\"1263 Pacific Ave. Kansas City KS\"}").
         to_return(:status => 200, :body => fixture("voter_info.json"), :headers => {})
       voter_info = @client.voter_info(2000, "1263 Pacific Ave. Kansas City KS")
+      voter_info.election.name.should eql "VIP Test Election"
+    end
+
+    it "should take a query parameter" do
+      stub_post("/voterinfo/2000/lookup?includeOffices=true&key=abc123").
+       with(:body => "{\"address\":\"1263 Pacific Ave. Kansas City KS\"}").
+        to_return(:status => 200, :body => fixture("voter_info.json"), :headers => {})
+      voter_info = @client.voter_info(2000, "1263 Pacific Ave. Kansas City KS", {includeOffices: true})
       voter_info.election.name.should eql "VIP Test Election"
     end
   end
 
   describe "#representative_info" do
     it "should return the representative information from an address" do
-     stub_post("/representatives/lookup?address=1263%20Pacific%20Ave.%20Kansas%20City%20KS&key=abc123").
+     stub_post("/representatives/lookup?key=abc123").
        with(:body => "{\"address\":\"1263 Pacific Ave. Kansas City KS\"}").
         to_return(:status => 200, :body => fixture("representative.json"), :headers => {})
       rep_info = @client.representative_info("1263 Pacific Ave. Kansas City KS")
