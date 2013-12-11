@@ -19,7 +19,7 @@ describe GoogleCivic::Client do
       stub_get("/elections?key=abc123").
         to_return(:status => 200, :body => fixture("elections.json"), :headers => {})
       elections = @client.elections
-      elections.first.should == ["kind", "civicinfo#electionsqueryresponse"]
+      elections.first.should eql ["kind", "civicinfo#electionsqueryresponse"]
     end
   end
 
@@ -29,7 +29,17 @@ describe GoogleCivic::Client do
        with(:body => "{\"address\":\"1263 Pacific Ave. Kansas City KS\"}").
         to_return(:status => 200, :body => fixture("voter_info.json"), :headers => {})
       voter_info = @client.voter_info(2000, "1263 Pacific Ave. Kansas City KS")
-      voter_info.election.name.should == "VIP Test Election"
+      voter_info.election.name.should eql "VIP Test Election"
+    end
+  end
+
+  describe "#representative_info" do
+    it "should return the representative information from an address" do
+     stub_post("/representatives/lookup?address=1263%20Pacific%20Ave.%20Kansas%20City%20KS&key=abc123").
+       with(:body => "{\"address\":\"1263 Pacific Ave. Kansas City KS\"}").
+        to_return(:status => 200, :body => fixture("representative.json"), :headers => {})
+      rep_info = @client.representative_info("1263 Pacific Ave. Kansas City KS")
+      rep_info.offices.first[1].name.should eql "United States House of Representatives KS-03"
     end
   end
 
