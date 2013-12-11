@@ -19,6 +19,7 @@ Gem::Specification.new do |gem|
   gem.executables = `git ls-files -- bin/*`.split("\n").map{|f| File.basename(f)}
   gem.files       = `git ls-files`.split("\n")
   gem.homepage    = ''
+  gem.license     = 'MIT'
   gem.name        = 'google-civic'
   gem.require_paths = ['lib']
   gem.summary     = gem.description
